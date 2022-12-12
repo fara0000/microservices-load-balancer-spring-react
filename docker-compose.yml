@@ -1,0 +1,29 @@
+version: "3.0"
+services:
+  main-service:
+    build:
+      context: ./main-service
+    environment:
+      - PORT=8080
+      - DATABASE_HOST=127.0.0.1:5432
+      - DATABASE_NAME=cities
+      - DATABASE_USERNAME=fara0000
+      - DATABASE_PASSWORD=SGJc3Jzi
+
+  frontend:
+    build:
+      context: ./frontend
+    ports:
+      - 3000:3000
+#      depends_on:
+#        - backend
+  calculate-service-spring:
+    build:
+      context: ./calculate-service/spring
+    environment:
+      - PORT=8081
+  calculate-service-ejb:
+    build:
+      context: ./calculate-service/EJB
+    environment:
+      - PORT=8082

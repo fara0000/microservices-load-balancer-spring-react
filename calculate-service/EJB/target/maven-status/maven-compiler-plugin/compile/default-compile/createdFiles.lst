@@ -1,0 +1,11 @@
+soa/lab/model/Organization.class
+soa/lab/service/OrganizationRestServiceImpl$1.class
+soa/lab/model/OrganizationType.class
+soa/lab/model/Location.class
+soa/lab/service/OrganizationRestServiceImpl.class
+soa/lab/service/OrganizationRestService.class
+soa/lab/model/Coordinates.class
+soa/lab/service/FilterService.class
+soa/lab/model/Address.class
+soa/lab/service/FilterServiceImpl.class
+soa/lab/exception/DataNotFoundException.class
