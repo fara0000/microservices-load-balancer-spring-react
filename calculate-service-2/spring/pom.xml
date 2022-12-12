@@ -62,7 +62,6 @@
         <dependency>
             <groupId>soa.lab</groupId>
             <artifactId>CalculateService-EJB</artifactId>
-            <version>1.0-SNAPSHOT</version>
             <type>war</type>
         </dependency>
         <dependency>
