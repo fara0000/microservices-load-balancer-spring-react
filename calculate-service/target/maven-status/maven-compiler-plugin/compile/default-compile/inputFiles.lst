@@ -1,0 +1,12 @@
+/home/fakhri/ITMO/SOA/microservices-load-balancer-spring-react/calculate-service/src/main/java/soa/lab/entity/Climate.java
+/home/fakhri/ITMO/SOA/microservices-load-balancer-spring-react/calculate-service/src/main/java/soa/lab/service/CalculateService.java
+/home/fakhri/ITMO/SOA/microservices-load-balancer-spring-react/calculate-service/src/main/java/soa/lab/exception/RestResponseEntityExceptionHandler.java
+/home/fakhri/ITMO/SOA/microservices-load-balancer-spring-react/calculate-service/src/main/java/soa/lab/CalculateServiceApplication.java
+/home/fakhri/ITMO/SOA/microservices-load-balancer-spring-react/calculate-service/src/main/java/soa/lab/entity/Human.java
+/home/fakhri/ITMO/SOA/microservices-load-balancer-spring-react/calculate-service/src/main/java/soa/lab/entity/Government.java
+/home/fakhri/ITMO/SOA/microservices-load-balancer-spring-react/calculate-service/src/main/java/soa/lab/exception/DataNotFoundException.java
+/home/fakhri/ITMO/SOA/microservices-load-balancer-spring-react/calculate-service/src/main/java/soa/lab/entity/Coordinates.java
+/home/fakhri/ITMO/SOA/microservices-load-balancer-spring-react/calculate-service/src/main/java/soa/lab/entity/StandardOfLiving.java
+/home/fakhri/ITMO/SOA/microservices-load-balancer-spring-react/calculate-service/src/main/java/soa/lab/controller/CalculateController.java
+/home/fakhri/ITMO/SOA/microservices-load-balancer-spring-react/calculate-service/src/main/java/soa/lab/entity/City.java
+/home/fakhri/ITMO/SOA/microservices-load-balancer-spring-react/calculate-service/src/main/java/soa/lab/config/JavaConfig.java

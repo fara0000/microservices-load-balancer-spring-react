@@ -1,0 +1,13 @@
+soa/lab/entity/Human.class
+soa/lab/entity/Government.class
+soa/lab/controller/CalculateController.class
+soa/lab/service/CalculateService.class
+soa/lab/entity/StandardOfLiving.class
+soa/lab/entity/City.class
+soa/lab/CalculateServiceApplication.class
+soa/lab/entity/Climate.class
+soa/lab/config/JavaConfig.class
+soa/lab/entity/Coordinates.class
+soa/lab/exception/RestResponseEntityExceptionHandler$ErrorDTO.class
+soa/lab/exception/DataNotFoundException.class
+soa/lab/exception/RestResponseEntityExceptionHandler.class
