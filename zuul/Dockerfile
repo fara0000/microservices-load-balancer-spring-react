@@ -1,5 +1,6 @@
-FROM adoptopenjdk/openjdk11:jdk-11.0.11_9-alpine-slim
-
-COPY target/second-service-zuul.war second-service-zuul.war
-
-ENTRYPOINT ["java","-jar","/second-service-zuul.war"]
+FROM java:8-jdk
+RUN mkdir /app
+WORKDIR /app
+COPY build/libs/zuul.jar /app
+ENTRYPOINT ["java", "-Djava.security.egd=file:/dev/./urandom", "-jar", "/app/zuul.jar", "--spring.profiles.active=docker"]
+EXPOSE 8060
