@@ -1,5 +1,6 @@
 package soa.lab.service;
 
+import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
@@ -14,17 +15,13 @@ import java.util.stream.Collectors;
 
 @Slf4j
 @Service
+@AllArgsConstructor
 public class CalculateService {
     private final WebClient localApiClient;
 
-    @Autowired
-    public CalculateService(WebClient localApiClient) {
-        this.localApiClient = localApiClient;
-    }
-
     private City[] getCitiesFromMainService() {
         City[] responseBody = localApiClient.get()
-                .uri("/city")
+                .uri("/cities")
                 .accept(MediaType.APPLICATION_JSON)
                 .retrieve()
                 .bodyToMono(City[].class)

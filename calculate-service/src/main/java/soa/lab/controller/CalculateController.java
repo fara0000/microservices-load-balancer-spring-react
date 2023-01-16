@@ -14,9 +14,18 @@ import soa.lab.service.CalculateService;
 @AllArgsConstructor
 @RequestMapping("/calculate")
 public class CalculateController {
-    private final CalculateService calculateService;
+    @Autowired
+    private CalculateService calculateService;
 
-    @CrossOrigin(origins = "https://se.ifmo.ru/~s270239")
+    @CrossOrigin(origins = "*")
+    @GetMapping("/max")
+    public ResponseEntity<Integer> getRandomNum() {
+        System.out.println("calculatePopulated method in controller");
+        return new ResponseEntity<>(200, HttpStatus.OK);
+    }
+
+
+    @CrossOrigin(origins = "*")
     @GetMapping("/between-max-and-min-populated")
     public ResponseEntity<Integer> calculatePopulated() {
         System.out.println("calculatePopulated method in controller");
