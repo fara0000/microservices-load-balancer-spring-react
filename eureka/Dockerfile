@@ -1,6 +1,6 @@
-FROM java:8-jdk
+FROM maven:3.8.4-jdk-11-slim AS build
 RUN mkdir /app
 WORKDIR /app
-COPY build/libs/eureka-server.jar /app
-ENTRYPOINT ["java", "-Djava.security.egd=file:/dev/./urandom", "-jar", "/app/eureka-server.jar", "--spring.profiles.active=docker"]
+COPY target/eureka.jar /app
 EXPOSE 8761
+CMD ["java",  "-jar", "eureka.jar"]
